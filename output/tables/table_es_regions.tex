@@ -1,0 +1,47 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Regional Event Studies — Effect of Populist Shock on ln(ODA)}
+\begin{tabular}{l*{6}{c}}
+\toprule
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}\\
+            &\multicolumn{1}{c}{SSA}&\multicolumn{1}{c}{MENA}&\multicolumn{1}{c}{ECA}&\multicolumn{1}{c}{South Asia}&\multicolumn{1}{c}{East Asia-Pacific}&\multicolumn{1}{c}{Latin America-Caribbean}\\
+\midrule
+0.event\_time\_shift&       2.871\sym{***}&      -0.228         &       1.008         &       1.311         &      -2.489         &       2.817         \\
+            &    (0.0729)         &     (0.546)         &     (0.394)         &     (2.201)         &     (1.581)         &     (2.175)         \\
+\addlinespace
+1.event\_time\_shift&       1.623\sym{**} &       0.246         &       0.352         &       0.563         &      -1.031         &       1.563         \\
+            &     (0.197)         &     (0.593)         &     (0.470)         &     (2.455)         &     (1.736)         &     (2.361)         \\
+\addlinespace
+2.event\_time\_shift&       0.659         &       0.772\sym{***}&      -0.177         &       0.671         &      -0.821         &     -0.0468         \\
+            &     (0.384)         &    (0.0764)         &     (0.538)         &     (1.834)         &     (1.116)         &     (1.210)         \\
+\addlinespace
+3.event\_time\_shift&      -0.463         &       0.138         &     -0.0533         &       0.501         &      -0.624         &      -1.125         \\
+            &     (0.312)         &    (0.0529)         &     (0.230)         &     (0.881)         &     (0.751)         &     (0.815)         \\
+\addlinespace
+4.event\_time\_shift&           0         &           0         &           0         &           0         &           0         &           0         \\
+            &         (.)         &         (.)         &         (.)         &         (.)         &         (.)         &         (.)         \\
+\addlinespace
+t=0         &      -0.724\sym{***}&      -0.638\sym{**} &    0.000170         &       0.569         &      -1.260\sym{**} &     -0.0582         \\
+            &    (0.0438)         &     (0.105)         &    (0.0370)         &     (0.260)         &     (0.186)         &     (0.284)         \\
+\addlinespace
+t=+1        &      -1.027\sym{***}&      -0.438         &      -0.259\sym{*}  &       0.386         &      -0.461         &     -0.0897         \\
+            &    (0.0727)         &     (0.301)         &    (0.0801)         &     (0.741)         &     (0.609)         &     (0.930)         \\
+\addlinespace
+t=+2        &      -1.593\sym{**} &      -0.451         &      -0.495         &      0.0975         &       0.419         &      -1.029         \\
+            &     (0.174)         &     (0.189)         &     (0.325)         &     (1.171)         &     (0.693)         &     (0.854)         \\
+\addlinespace
+t=+3        &      -0.869         &      -1.319\sym{*}  &      -1.383\sym{*}  &      -1.233         &       0.127         &      -2.202         \\
+            &     (0.423)         &     (0.311)         &     (0.347)         &     (1.269)         &     (0.922)         &     (1.070)         \\
+\addlinespace
+t=+4        &      -0.633\sym{***}&     -0.0324         &      -0.470         &      -0.129         &      -0.273         &       0.306         \\
+            &    (0.0370)         &     (0.342)         &     (0.183)         &     (1.143)         &     (0.833)         &     (1.193)         \\
+\addlinespace
+t=+5        &           0         &           0         &           0         &           0         &           0         &           0         \\
+            &         (.)         &         (.)         &         (.)         &         (.)         &         (.)         &         (.)         \\
+\midrule
+\(N\)       &          22         &          22         &          22         &          22         &          22         &          22         \\
+\bottomrule
+\multicolumn{7}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{7}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

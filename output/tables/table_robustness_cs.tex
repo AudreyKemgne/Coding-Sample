@@ -1,0 +1,80 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Robustness Check: TWFE vs. Callaway \& Sant'Anna (2021)}
+\begin{tabular}{l*{2}{c}}
+\toprule
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}\\
+            &\multicolumn{1}{c}{TWFE}&\multicolumn{1}{c}{Callaway \& Sant'Anna}\\
+\midrule
+0.event\_time\_shift&     -0.0645         &                     \\
+            &     (0.563)         &                     \\
+\addlinespace
+1.event\_time\_shift&     -0.0687         &                     \\
+            &     (0.622)         &                     \\
+\addlinespace
+2.event\_time\_shift&      -0.159         &                     \\
+            &     (0.367)         &                     \\
+\addlinespace
+3.event\_time\_shift&      -0.123\sym{*}  &                     \\
+            &    (0.0304)         &                     \\
+\addlinespace
+4.event\_time\_shift&           0         &                     \\
+            &         (.)         &                     \\
+\addlinespace
+5.event\_time\_shift&      -0.404\sym{**} &                     \\
+            &    (0.0884)         &                     \\
+\addlinespace
+6.event\_time\_shift&      -0.638\sym{*}  &                     \\
+            &     (0.212)         &                     \\
+\addlinespace
+7.event\_time\_shift&      -0.985\sym{*}  &                     \\
+            &     (0.289)         &                     \\
+\addlinespace
+8.event\_time\_shift&      -1.297\sym{**} &                     \\
+            &     (0.244)         &                     \\
+\addlinespace
+9.event\_time\_shift&      -0.184         &                     \\
+            &     (0.317)         &                     \\
+\addlinespace
+10.event\_time\_shift&           0         &                     \\
+            &         (.)         &                     \\
+\addlinespace
+Pre\_avg     &                     &      -0.571\sym{***}\\
+            &                     &    (0.0835)         \\
+\addlinespace
+Post\_avg    &                     &      -0.441\sym{***}\\
+            &                     &     (0.143)         \\
+\addlinespace
+Tm5         &                     &      -1.038\sym{***}\\
+            &                     &     (0.148)         \\
+\addlinespace
+Tm4         &                     &      -0.663\sym{***}\\
+            &                     &     (0.125)         \\
+\addlinespace
+Tm3         &                     &      -0.396\sym{***}\\
+            &                     &    (0.0642)         \\
+\addlinespace
+Tm2         &                     &      -0.185\sym{**} \\
+            &                     &    (0.0921)         \\
+\addlinespace
+Tp0         &                     &      -0.311\sym{***}\\
+            &                     &    (0.0859)         \\
+\addlinespace
+Tp1         &                     &      -0.529\sym{**} \\
+            &                     &     (0.216)         \\
+\addlinespace
+Tp2         &                     &      -0.511\sym{*}  \\
+            &                     &     (0.265)         \\
+\addlinespace
+Tp3         &                     &      -0.413\sym{***}\\
+            &                     &    (0.0433)         \\
+\addlinespace
+\_cons      &       20.12\sym{***}&                     \\
+            &    (0.0915)         &                     \\
+\midrule
+\(N\)       &          22         &                     \\
+\bottomrule
+\multicolumn{3}{l}{\footnotesize TWFE: two-way fixed effects with donor and year fixed effects. CS: Callaway \& Sant'Anna estimator using never-treated and not-yet-treated donors as control group. Wild bootstrap standard errors in parentheses for CS estimates.}\\
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}
