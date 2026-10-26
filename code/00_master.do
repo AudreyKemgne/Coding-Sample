@@ -1,6 +1,6 @@
 /*==============================================================================
  Project : Master's thesis - Populism in donor countries and bilateral ODA
- Author  : [Your name]
+ Author  : Audrey KEMGNE
  File    : 00_master.do
  Purpose : Sets paths, installs packages (optional) and runs the full pipeline
            in the correct order.
