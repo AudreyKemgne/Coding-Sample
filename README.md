@@ -1,5 +1,5 @@
-# Writing-Sample
-Stata writing Sample for Predoc Application
+# Coding-Sample
+Stata conding Sample for Predoc Application
 
 # Populism in Donor Countries and Bilateral Development Aid
 
