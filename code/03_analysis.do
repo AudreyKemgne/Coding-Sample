@@ -16,8 +16,6 @@ if "${root}" == "" {
     exit 198
 }
 
-* CHECK: the original header said "Aid_populism2.dta" but the code loaded
-* Aid_populism.dta. The latter (donor x year panel with ln outcomes) is used here.
 use "$clean/Aid_populism_final.dta", clear
 xtset donor_id year
 
